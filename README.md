@@ -1,8 +1,9 @@
 ### This is a full-blown J2EE application for family members
+### This web site is running on the http://family-clu.rhcloud.com/login
 
 ### To build this application you need to 
-* Create an Amazon Simple DB
-* Create domains on Amazon simpleDB described as below classes
+* Create an Amazon Simple DB account
+* Create domains on Amazon simpleDB as described on the below classes
    * com.family.db.domain.AddressDomain
    * com.family.db.domain.EventDomain
    * com.family.db.domain.FamilyDomain
