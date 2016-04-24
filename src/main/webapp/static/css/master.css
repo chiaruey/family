@@ -1,0 +1,1646 @@
+@charset "UTF-8";lo
+/* CSS Document */
+/* Eric Meyer CSS Reset v1.0 | 20080212 http://meyerweb.com/eric/tools/css/reset/ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent;font-size:100%}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}:focus{outline:0;}ins{text-decoration:none;}del{text-decoration:line-through;}table{border-collapse:collapse;border-spacing:0;}
+
+
+/* =====================================
+	Tag Selectors : page wide styling
+   ===================================== */
+body {
+ font: 62.5%/1.6 "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif; 
+/*  font-family: Lucida Grande,Lucida Sans,Arial,sans-serif; */
+  background-color:#cce6f9;
+  min-width: 960px; 
+/*  min-height:700px;  */
+  padding: 12px;
+}
+  
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    color:#0070a3; /*#333; */
+    font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+    /*
+    font-family: "Futura", "Futura Std", FuturaStd-Medium, "Avant Garde", "Avant Garde Std", AvantGardeStd-Regular, "Century Gothic", "Century Gothic Std", CenturyGothicStd-Regular, "Twentieth Century", "Twentieth Century Std", TwentiethCenturyStd-Regular, Corbel, "Lucida Sans Regular", Trebuchet MS, Helvetica, sans-serif; 
+    */
+    
+    }
+    
+h1 {
+    font-size: 2.5em;
+    color: #e2e2e2;
+    text-shadow: 1px 1px 1px #555;
+    line-height: 1.25em;
+    letter-spacing: -.02em; }
+h2 {
+    font-size: 1.5em;   
+    line-height: 1.667em;
+    font-weight: normal; 
+    text-shadow: 1px 1px 1px #555;
+    }
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: .07em;
+/*     text-transform: uppercase; */
+    margin-top: 1.5em; }
+h5 {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: .07em;
+/*     text-transform: uppercase; */
+    margin-top: 1.5em; }
+  
+table {
+    padding:12px; 
+}
+    
+th, tr.heading {
+    font-weight: bold;
+}
+
+th, td {
+    padding: 0.25em }
+
+th[scope=row] {
+	text-align:right;
+}
+
+th[scope=col] {
+	text-align:right;
+}
+
+hr {
+    height: 1px;
+    color: #aaa;
+    background-color: #aaa;
+    border: 0;
+    margin: .2em 0 .2em 0; }
+ul, ol {
+    list-style: none;
+    border-top: 2px solid #e2e2e2; }
+h2 + ul, h2 + ol, h3 + ul, h3 + ol {
+    border-top: none; }
+li {
+    border-bottom: 2px solid #e2e2e2;
+    padding: .25em 0; }
+dt {
+    font-weight: bold; }
+dl {
+    margin-bottom: .5em; }
+dd {
+    margin-left: 1.5em; }
+fieldset {
+    border: 1px solid #2f6fab;
+    margin: 1.5em 0;
+    padding: .75em; }
+legend {
+    padding: .75em; }
+abbr, acronym, .explain {
+    border-bottom: 1px dotted #e2e2e2;
+    color: black;
+    background: none;
+    cursor: help; }
+q {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic; }
+code {
+    background-color: #f9f9f9; }
+pre {
+    padding: .75em;
+    border: 2px solid #e2e2e2;
+    background-color: #f9f9f9;
+    white-space: pre;
+    white-space: pre-wrap; }
+input {
+    border: 2px solid #e2e2e2;
+    background: #fafafa; }
+
+input {
+    border: 2px solid #e2e2e2;
+    background: #fafafa; }
+    
+input[type="text"] {
+	text-indent:2px;
+}
+
+img {
+	display: block; 
+	border: none;
+    vertical-align: middle
+	}	
+	
+textarea {
+	resize: none;
+}
+
+
+select {
+   padding: 1px;
+   border: 1px solid #aed0ea;
+   color: #2779aa;
+   -webkit-appearance: none;
+}
+
+/* ==================================
+   Class Selectors
+   ================================== */
+   
+/* ======= General =================*/
+
+.disabled {
+	background:#EFF5FF !important; 
+}
+
+.error {
+	color: red;
+}
+
+.font1_2em {
+	font-size:1.2em;
+}
+
+.hidden {
+	display:none;
+}
+
+.left {
+	text-align:left;
+}
+
+.right {
+	text-align:right;
+}
+
+.focusField{  
+    border:solid 2px #73A6FF;  
+    background:#EFF5FF;  
+    color:#000;  
+}  
+.idleField{  
+    background:#EEE;  
+    color: #6F6F6F;  
+    border: solid 2px #DFDFDF;  
+} 
+
+.floatRight {
+	float: right !important;
+}
+
+.floatLeft {
+	float: left !important;
+}
+
+.floatNone {
+	float:none !important;
+}
+
+.noBorder {
+	border:none !important;
+}
+
+.border4px {
+    border-width: 4px !important;	
+}
+
+.selectedCell {
+    border-width: 4px !important;	
+}
+
+.margin10px {
+	margin: 10px !important;
+}
+.noBackground {
+	background:none !important;
+}
+
+.bold {
+	font-weight: bold !important;
+}
+
+
+.padding2px {
+	padding: 2px !important;
+}
+
+.padding10px {
+	padding: 10px !important;
+}
+
+.padding5px {
+	padding: 5px !important;
+}
+
+.green, .notice {
+	color:#629a00 !important;
+}
+
+
+.minHeight20 {
+	min-height: 20px !important;
+}
+
+
+.minHeight40 {
+	min-height: 40px !important;
+}
+
+.lightGrey {
+	background-color:#d3d3d3 !important;
+}
+
+.red, .critical {
+	color:#F00 !important;
+}
+.yellow {
+	color:#FFD700 !important;
+}
+.orange, .important {
+	color:#F60;
+}
+.title {
+	font-weight: normal;
+	font-size: 1.5em; 
+	color: #0070a3;
+	text-shadow: 1px 1px 1px #555; 
+	padding: 10px;
+}
+.subTitle {
+	font-weight: normal;
+	font-size: 1.2em; 
+	color: #0070a3;
+	text-shadow: 1px 1px 1px #555; 
+	padding: 5px;
+}
+.pct5 {
+	width: 5%;
+}
+.pct10 {
+	width: 10%;
+}
+.pct20 {
+	width: 20%;
+}
+.pct15 {
+	width: 15%;
+}
+.pct40 {
+	width: 40%;
+}
+.px75 {
+	width: 75px;
+}
+.pct100 {
+	width: 100%;
+}
+.pct90 { 
+   margin-left:5%; 
+   width: 90%;
+}
+.px67-ib {
+	width: 67px;
+	display:inline-block;
+}
+
+.px100 {
+	width: 100px;
+}
+
+.inlineblock {
+	display:inline-block;
+}
+
+ /* === JQuery UI Adaptor classes =========== */
+    
+.jqTable{
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+  
+}
+
+.jqTable td, .jqTable th  {
+    margin: 0;
+    padding: 4px;
+}
+
+.email {
+	width:60%;
+}
+
+.firstName {
+	width:50%;
+}
+
+.username {
+	width:50%;
+}
+
+.familyName {
+	width:50%;
+}
+
+.lastName {
+	width:50%;
+}
+
+.password {
+	width:50%;
+}
+
+.secureQuestion {
+	width:100%;
+}
+.secureQuestionAnswer{
+	width:60%;
+}
+.monthStyle {
+	width:25%;
+}
+
+.dayStyle {
+	width:25%;
+}
+
+.yearStyle {
+	width:25%;
+}
+
+
+.gender {
+	width:40%;
+}
+
+.role {
+	width:40%;
+}
+
+
+.street {
+	width:80%;
+}
+
+.city {
+	width: 40%;
+}
+
+.state {
+	width: 40%;
+}
+
+.country {
+	width: 40%;
+}
+
+.zip {
+	width: 40%;
+}
+
+/* .leftFiller4pct {
+	height: 25px;
+	display: table-cell;
+	width: 4%; float : left;
+	float: left;
+} */
+
+/* ======== Header ==================== */
+.branding h1 {
+  margin: 0;
+}
+
+.bodyWrapper {
+  background-color: #fff;
+  width: 920px;  
+  margin: 0 auto; 
+  text-align: left;
+}
+
+.homeView {
+  padding: 12px;	
+}
+
+body>div.header, body>div.bodyWrapper>div.header {
+  height: 50px;
+  background-color:#6291c0; /*#6291c0; #5CCCCC;  #b0b0b0; */
+  padding: 20px;
+}
+
+.logo {
+	background-color: transparent;
+	width: 300px;
+}
+
+div.header .logout {
+	float: right;
+	color: #ffffff;
+	font-size: 1.5em;
+}
+
+div.header .regTitle {
+	float: right;
+	color: #ffffff;
+	font-size: 2em;
+}
+
+div.header .accessHelpTitle {
+	float: right;
+	color: #ffffff;
+	font-size: 2em;
+}
+.block {
+	display: block;
+} 
+
+/* ======== Left Navigation =========== */
+
+.nav {
+  list-style: none;
+/*	padding: 10px; */
+}
+
+ul.nav a:hover,
+ul.nav a:focus,
+ul.nav a.selected {
+	color: #ffffff;
+	background-color: #6698FF; 
+}
+
+ul.nav a {
+  display: block;
+	color: #2B60DE;
+	font-size: 1.5em;
+	text-decoration: none;
+	border-top: 1px solid #E4FFD3;
+	border-bottom: 1px solid #38ACEC;
+	padding: 10px;
+}
+
+/* ========== error Page ========== */
+.errorWrapper {
+  width: 280px;
+  padding-right: 20px;
+  float: right;
+}
+
+/* ========== mainWrapper Page ========= */
+
+.mainWrapper .introWrapper { 
+  width: 600px;
+  float: left; 
+} 
+
+img.introPhoto {
+	width: 600px;
+}
+
+.loginContainer { 
+  width: 280px;
+  padding-right: 20px;
+  float: right;
+  height: 500px;
+}
+
+.mainWrapper {
+	overflow: hidden;
+	min-height:400px;
+}
+
+/* mainWrapper */
+
+.mainWrapper .leftBar { 
+  width: 100px;
+  float: left; 
+  font-size: 1.2em;
+  text-align: center;
+  background: #fff url(../img/nav-bg-fixed.gif) repeat-y left top;
+} 
+
+.mainWrapper .leftBar  {
+	padding-left: 20px;
+}
+
+/* ========= ContentWrapper ======= */
+
+.contentWrapper { 
+	position:relative;
+	min-height:900px; 
+	overflow:auto;
+}
+
+.contentWrapper div.header {
+	height: 40px;
+	padding: 5px;
+	margin-bottom: 5px;
+	color: #6291c0; /* #004276; */
+	-moz-border-radius: 8px;
+  	-webkit-border-radius: 8px;
+}
+
+/* ========= centerPanelWrapper ======= */
+
+.centerPanelWrapper {
+	position:relative;
+	overflow:auto;
+	padding: 8px 8px 5px 8px;
+	width: 65%;
+	min-height: 600px; 
+	margin-left: 20px;
+	position: absolute;
+	left: 31%;	
+	border: 1px solid #AED0EA;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;	
+}
+
+.centerPanelWrapper h2 {
+	test-align:left;
+/*	margin-left:60px; */
+}
+
+.centerPanelWrapper div.content {
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 10px;
+/*	height: 550px; */
+}	
+
+
+
+.centerPanelWrapper div.header {
+	height: 40px;
+	padding: 5px;
+	margin-bottom: 5px;
+	color: #6291c0; /* #004276; */
+	-moz-border-radius: 8px;
+  	-webkit-border-radius: 8px;
+}
+
+/* ========= rightPanelWrapper ======= */
+
+.rightPanelWrapper { 
+	position:relative;
+	overflow:auto;
+	float:right;
+	color:#0070a3;// #004276;
+	-moz-border-radius: 8px;
+  	-webkit-border-radius: 8px;
+}
+
+/*
+.contentWrapper div.header h2 {
+	color: #004276
+}
+*/
+/* ======== LeftPanelWrapper =========== */
+
+.leftPanelWrapper {
+	padding: 0px 0px 20px 20px;
+	width:30%;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+.leftPanelWrapper h2{
+	text-align:left;
+}
+
+
+.leftPanelWrapper ul, ol {
+    list-style: circle;
+    border-top: none; }
+
+.leftPanelWrapper li {
+    border: none;}
+    
+#userInfoWrapper {
+	border: 1px solid #AED0EA;
+	
+}
+
+.centerTable {
+/*	padding: 1em; */
+	width:100%;
+}
+
+.centerTable th {
+	border:2 none;
+/*	padding: 1em; */
+}
+
+
+.centerTable td {
+	border: 1px solid #CCCCCC;
+/*	padding: 1em; */
+}
+
+.buttonBar {
+	padding: 12px 0px 12px 0px;
+}
+
+.buttonBar input[type="submit"] {
+/*	float:right;	*/
+}
+
+/* ========== Footer ============== */
+
+.footer {
+  padding: 1px 20px;
+  border-top: 1px solid #cce6f9;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+
+/* ==============================   
+ *           login page 
+ * ============================== */
+
+#forgotLnk {
+	color: #198fff;
+	margin-top: 15px;
+	outline: medium none;
+	text-decoration: none;
+}
+
+
+
+.loginDiv {
+	margin-top:5%;
+	margin-bottom:3%;
+}
+
+
+#loginTable th[scope=row] {
+	text-align:right;
+}
+
+#loginTable td {
+	text-align: left;
+}
+
+#loginTable {
+	border: 1px solid #CCCCCC;
+/* 	margin: 10% 2%; */
+	width:96%;
+}
+
+
+.loginRowDiv {
+	margin: 10px;	
+}
+
+.loginRowDiv input {
+	width:95%;
+}
+
+#loginErrorSpan {
+	color:red;
+}
+
+#loginInfoSpan {
+	color:green;
+}
+
+
+#joinFamily {
+	float: right;
+	color: white;
+	font-size: 1em;
+}
+
+#joinFamilyLink {
+	padding: 3px;
+}
+
+.dfltAnchorButton {
+	padding: 0.4em 1em 0.4em 20px;
+	position: relative;
+	text-decoration: none;
+}
+
+/* ===================================== *
+ *            Home Page                  *
+ * ======================================*/
+
+/* ========== homeWrapper ============== */
+#homeWrapper {	
+	position:relative;
+}
+
+/* ======== Home page - family Info  ======= */
+
+
+#familyInfoTable th {
+	border:2 none;
+	padding: 5px;
+}
+
+
+#familyInfoTable td {
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+}
+
+#familyInfoTable caption
+{
+  caption-side: bottom;
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+/* ==== Home Page - Family Members ==== */
+
+.familyMemberTable th[scope=row]{
+	border:1 none;
+	width:100px;
+	padding: 5px;
+}
+
+#myFamily .familyMemberTable td{
+	border:1px solid #CCCCCC;
+	width:200px;
+	padding: 5px;
+}
+
+#myFamily .familyMemberHeading {
+	width: 150px;
+	margin: 10px 0px 10px 0px;
+	position:relative;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+}
+
+#myFamily .familyMemberHeading a {
+	display:block;
+	padding: 3px 3px 3px 20px;
+}
+
+#myFamily .familyMemberHeading .jqIcon {
+	left:2px;
+	margin-top:-8px;
+	position:absolute;
+	top:50%;
+}
+
+/* ==============================   
+ *           Money Page
+ * ============================== */
+
+#moneyChartWrapper {
+	width:30%;
+}
+
+#moneyDetailWrapper {
+	width:60%;
+	left: 32%;
+}
+
+#transitionWrapper {
+	width:98%;
+}
+
+.addNewBtn {
+	float: right;
+}
+
+
+/* ==================================
+ *   Add new Monetary Trac Pop up
+ * ================================== */
+.tracPopup fieldset { 
+	padding:0; border:0; 
+}
+
+.popupField .tracInput {
+	position: absolute;
+	left: 150px;
+	width:170px;
+	float:right;
+}
+
+.popupField {
+	margin-bottom:10px; 	
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-collapse: collapse;
+}
+
+.popupField textarea {
+	height:30px;
+}
+
+.popupField label {
+	font-weight: bold;	
+}
+
+.dateField img {
+	display:inline;
+	position:absolute;
+	left:250px;	
+}
+
+.dateField input[type="text"]{
+	width:100px !important; 
+}
+
+/* ============================ *
+ *  Wall Message                *
+ * ============================ */
+      
+div.content table.wallMessageList {
+	width:100%;
+	margin: 5px 0 0 0;
+}
+div.content table.wallMessageList td h5 a {
+	font-size:11px;
+	white-space: normal;
+	color: #333;
+}
+div.content table.wallMessageList a {
+	display:block;
+	white-space: nowrap;
+}
+
+div.content table.wallMessageList a.del:hover {
+	background:#2779AA;
+}
+
+div.content table.wallMessageList a.coverImage,
+div.content table.wallMessageList td:first-child {
+	text-align:center;
+}
+div.content table.wallMessageList td {
+	border-bottom:1px solid #DDD;
+	padding:7px 4px;
+	vertical-align: middle;
+	line-height: 1.2em;
+	white-space: normal;
+	font-size: 11px;
+}
+
+/* ================================= *
+ *  Registration                     *
+ * ================================= */
+ 
+.regRightWrapper {
+	position:relative;
+	overflow:auto;
+	padding:1% 1% 1% 2%;
+ 	margin:1% 1% 1% 2%;
+ 	width: 50%; 
+	float:right;
+}
+
+.regLeftWrapper {
+	width: 35%;
+	float: left;
+	padding:1% 2%;
+ 	margin:1% 2%; 
+}
+
+.regLeftWrapper .introContent {
+	padding: 2%;
+	text-align: left;
+	border: 1px solid #AED0EA;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;	
+}
+
+.introItem {
+	font-weight: normal;
+	color: #0070a3;
+	font-size: 1.1em;
+	padding: 1%;
+}
+
+table.registrationInput {
+	width:80%; 
+	margin: 5px 0 20px 5%;
+	padding: 2% 2% 2% 5%;
+}
+
+table.registrationInput th {
+	padding: 5px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+	text-align: right;
+	text-shadow: 1px 1px 1px #777;
+	width: 25%;
+}
+
+table.registrationInput td {
+	padding: 5px;
+}
+
+.regBtn {
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #777;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    letter-spacing: .07em;
+    margin:2%;
+}
+
+.regButtonDiv {
+	padding:2%;
+	width:90%;
+}
+
+.regFamilyInfo th {
+	border:2 none;
+	padding: 5px;
+	width:10%;
+}
+
+
+.regFamilyInfo td {
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	width:20%;
+}
+
+.regFamilyInfo caption
+{
+  caption-side: bottom;
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+/* ============================== *
+ * Administration                 *
+ * ============================== */
+ 
+#adminContentWrapper {
+	min-height:600px;
+}
+
+#adminContentPanelWrapper {
+	min-height:400px;
+}
+
+
+#myInfoWrapper {
+	margin: 5px;	
+	border: 1px solid #2694E8;
+	padding: 5px 15px;
+}
+
+#myInfoWrapper #myInfoTitle {
+	padding: 10px 2px;
+}
+
+ .adminView .centerPanelWrapper {
+ 	left: 21%;	
+	width: 75%;
+}
+
+ #adminleftPanel {
+	width:20%;
+	margin-right: 10px;
+	padding: 0;
+}
+
+#adminLeftMenu {
+	border: none;
+    color: #2779AA;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+ #adminLeftMenu .selected {
+	background: url("images/ui-bg_glass_80_d7ebf9_1x400.png") repeat-x scroll 50% 50% #D7EBF9; 	
+    border: 3px solid #2694E8;
+ }
+ 
+  #adminLeftMenu .default {
+	background-color: #FFFFFF;
+    border: 1px solid #AED0EA;
+ }
+
+ #adminLeftMenu li{
+ 	list-style-type:none;
+ 	margin: 10px;
+ 	padding: 8px 0px;
+ 	width: 180px;
+ }
+ 
+ .admimFamilyPopup #dobMonth {
+ 	margin-left: 12px;
+ }
+ 
+ .admimFamilyPopup .dobField {
+ 	width: 70px;
+ 	margin-left: 2px;
+ }
+ 
+ .admimFamilyPopup .tracInput {
+	position: absolute;
+	left: 150px;
+	width:170px;
+	float:right;
+}
+ .admimFamilyPopup .popupField {
+	margin: 4px;
+	padding: 5px;
+}
+ 
+ 
+ #modifyHomeAddressBtn {
+ 	margin: 20px 0 10px;
+ }
+ 
+ /* ======================== *
+  *   Calendar               *
+  * ======================== */
+
+#calendarTable {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.calendarHeader {
+	color:#0070a3;
+	text-shadow: 1px 1px 1px #555; 
+	min-height:50px;
+	padding: 10px 0;
+}
+.addEventHeader {
+	margin-right: 2%;
+	margin-top: 13px;
+	padding: 3px 4px;
+	cursor: pointer;
+	float:right;
+}
+
+.calendarScrollHeader {
+	display:inline-block;
+	font-size:1.1em; 
+	width:280px;
+	border: 1px solid #aed0ea;
+    color: #2779aa;
+    font-weight: bold;
+    padding:2px;
+    margin-top: 4px;
+}
+
+#weekScrollHeader {
+	margin-left:18%;
+}
+#dayScrollHeader {
+	margin-left:18%;
+}
+
+#monthScrollHeader {
+	margin-left:18%;
+}
+#moneyScrollHeader {
+	margin-left:35%;
+}
+
+.dayWeekMonthDiv {
+	display:inline-block;
+ 	float:left; 
+	margin-left:2%;
+	margin-top:15px;	
+	cursor: pointer;
+	width:20%;
+	padding: 0;
+}
+
+.dayWeekMonthSpan {
+	display: inline-block;
+	width: 31%;
+	padding: 3px 0;
+	margin:0;
+	height:20px;
+	text-align:center;
+}
+
+.calendarWeekTable {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.dayHeader {
+	padding: 5px;
+	border: 1px solid #6291c0;
+	background-color:#6291c0;
+	color: #ffffff;
+	font-weight:bold;
+}
+
+.dayCell {
+	padding: 5px;
+	border: 1px solid #6291c0;
+	width: 160px;
+	min-height:35px;
+}
+.weekCell {
+	padding: 5px;
+	border: 1px solid #6291c0;
+	width: 160px;
+	min-height:35px;
+}
+.monthlyCalendarCell {
+	padding: 5px;
+	border: 1px solid #6291c0;
+	width: 13%;
+}
+
+.monthlyCalendarRow {
+	height:100px;
+}
+
+#scheduleTable {
+	float:left;
+	margin-left:10px;
+}
+
+.scheduledDayHeader {
+	border: 1px solid #6291c0;
+	background-color:#d7ebf9;
+	color: #2779AA;
+	font-weight:bold;
+	padding-left:30px;
+}
+
+.width33pct {
+	width: 33.33%;
+}
+
+.scheduledDayCell {
+	padding: 5px;
+	border: 1px solid #6291c0;
+	width: 180px;
+}
+
+.calendar_date_string_div {
+	margin: 4px auto;
+	position: relative;
+	padding: 4px 2px;
+	cursor: pointer;
+	float: left;
+	width: 185px;	
+	height:20px;
+	font-size: 1.1em;
+	display: table-cell;
+	text-align: center;
+}
+
+.next_arrow {
+	float: right;
+}
+.prev_arrow {
+	float: left;
+}
+
+.icon-div {
+	margin: 3px;
+	position: relative;
+	padding: 6px 0;
+	cursor: pointer;
+	float: left; 
+}
+
+.icon-div span.ui-icon {
+	float: left;
+	margin: 0 6px;
+}
+
+/* ==================================
+ *   Add new Event Trac Pop up
+ * ================================== */
+ 
+/* Event Pop Up */
+.eventPopup{
+	padding: 15px !important;
+}
+
+
+.eventPopup fieldset { 
+	padding:0; border:0; 
+}
+
+.eventPopup .popupField eventInput {
+	left: 145px;
+	width:170px;
+	float:right;
+}
+
+.eventPopup .popupField {
+	margin-bottom:10px; 	
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-collapse: collapse;
+}
+
+.eventPopup .popupField textarea {
+	height:30px;
+}
+
+.eventPopup .textAreaPopupField {
+	height:40px;
+}
+
+.eventPopup .textPopupField {
+	height:25px;
+}
+
+
+.eventPopup .eventForm .popupLabel {
+	font-weight: bold;	
+	width:80px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.eventPopup .eventDateField img {
+	display:inline-block;
+	margin-left:5px;
+	margin-right:20px;	
+}
+
+.eventPopup .eventDateField input[type="text"]{
+	width:75px !important; 
+}
+
+.eventPopup .eventTitle {
+	width:350px !important;
+}
+
+.eventPopup .eventComment {
+	width:350px;
+	height:50px !important;
+}
+
+/* Error Dialog */
+
+.jqMessage {
+	padding: 5px;
+	font-size: 1.1em;
+}
+
+/* =================
+   Calendar Day 
+   ================= */
+
+
+.calendarDayTable {
+	border-collapse: separate;
+	border-spacing: 2px;
+	padding: 5px;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#dailyToday {
+	margin-left:20px;
+}
+
+
+/* ================
+   Wall Message
+   ================ */
+
+#wallMessageHeader {
+	color:#0070a3;
+	text-shadow: 1px 1px 1px #555; 
+	min-height:50px;
+	padding: 10px 0; 
+	border: 1px solid #AED0EA;
+} 
+
+#addMyMessageBtn {
+	margin: 10px 30px 10px 0;
+}
+
+#myMessageTitle {
+	display: inline-block;
+/* 	margin-left: 20px; */
+	font-weight: bold;
+	font-size: 1.2em; 
+	color: #0070a3;
+/* 	text-shadow: 1px 1px 1px #555;  */
+/* 	padding: 10px; */
+}
+
+#myMessageText {
+	margin-top: 10px;
+	width:350px;
+	height:50px !important;
+}
+
+
+/* ================
+   Manage Account  
+   ================ */
+ 
+#manageAccountHeader {
+	margin:2% 15%;
+}
+#manageAccountDiv {
+	width:60%;
+	margin-left:20%;
+}
+#manageAccountTable th[scope=row] {
+	text-align:right;
+	margin: 1%;
+}
+
+#manageAccountTable td {
+	text-align: left;
+	margin:1%;
+	padding:1% !important;
+}
+
+#manageAccountTable {
+	margin: 2%;
+	padding:2%;
+ 	width:80%; 
+}
+
+.manageAccountRowDiv {
+	margin: 1%;	
+}
+
+
+
+/* ==========================
+        Manage Family  
+   ========================== */
+ 
+#manageFamilyHeader {
+	margin:2% 30%;
+	display:inline;
+}
+
+/* ==========================
+        Manage Transaction  
+   ========================== */
+ 
+#manageMoneyTransactionDiv {
+	width:80%;
+	margin-left:10%;	
+} 
+
+#manageMoneyTransactionHeader {
+	margin:2% 30%;
+	display:inline;
+}
+
+/* ================
+   Manage Address  
+   ================ */
+#manageAddressDiv {
+	width:60%;
+	margin-left:20%;
+}
+
+#manageAddressHeader {
+	margin:2% 15%;
+}
+#manageAddressDiv {
+	width:60%;
+	margin-left:20%;
+}
+#manageAddressTable th[scope=row] {
+	text-align:right;
+	margin: 1%;
+}
+
+#manageAddressTable td {
+	text-align: left;
+	margin:1%;
+	padding:1% !important;
+}
+
+#manageAddressTable {
+	margin: 2%;
+	padding:2%;
+ 	width:80%; 
+}
+
+.manageAddressRowDiv {
+	margin: 1%;	
+}
+
+
+/* ================
+   Access Help
+   ================ */
+
+
+.accessHelpTable th {
+	text-align:right;
+	margin: 2% 5%;
+}
+
+.accessHelpTable td {
+	text-align: left;
+	margin: 1%;
+}
+
+ 
+.accessHelpTable {
+	margin: 2%;
+	padding: 1%;
+	width: 90%; 
+}
+
+
+.accessHelpRightWrapper {
+	position:relative;
+	overflow:auto;
+	padding:1% 2%;
+ 	margin:1% 2%; 
+ 	width: 50%; 
+	float:right;
+}
+
+.accessHelpTitleDiv {
+	margin-left:30%;
+	margin-bottom:5%;
+}
+
+.accessHelpLeftWrapper {
+	width: 30%;
+	float: left;
+	min-height: 200px;
+	padding:1% 2%;
+ 	margin:2%; 
+}
+
+.accessHelpLeftWrapper .introContent {
+	padding: 5%;
+	text-align: left;
+	border: 1px solid #AED0EA;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;	
+}
+
+/* ============
+   Angular JS
+   ============ */
+.access-screen {
+	max-width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.88em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.form-messages {
+    margin-top: 1em;
+    font-size: 0.9em;
+    border-radius: 4px;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 1em;
+}
+.form-messages.errors {
+    color: #e9322d;
+    background-color: #fbe8e5;
+}
+.error-icon, .info-icon {
+    margin-left: 0.8em;
+    display: inline-block;
+    height: 25px;
+}
+.messages-group {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0.3em;
+}
+
+/* ===============
+   Intro Page
+   =============== */
+   
+   
+.introWrapper .introContent {
+	padding: 2% 5%;
+	margin: 2% 5%;
+	text-align: left;
+	font: 1.1em;
+	backbround-color:#d7ebf9;
+}
+
+.info-messages {
+    color: #3b67a7;
+    background-color: #d0eaff;
+    margin-top: 5%;
+    padding: 1em;
+    width: 90%;
+}
+
+/* ==================
+   Errors 
+   ================== */
+
+#leftBarDiv {
+	width:45%;
+}
+
+.errorRightDiv {
+	width:45%;
+	margin: 1%;
+	padding: 2%;
+	float: right;
+}
+
+/* ====================
+   Demo Users
+   ==================== */
+ 
+ table.demoUserTable {
+    border-collapse: collapse;
+    border-color: #666666;
+    border-width: 1px;
+    color: #333333;
+    margin-left:5px;
+    margin-top:5px;
+}
+table.demoUserTable th {
+    background-color:#E0F3FC;/* #dedede; */
+    border-color: #666666;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    width:80px;
+}
+table.demoUserTable td {
+    background-color: #ffffff;
+    border-color: #666666;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    width:80px;
+}
+
+.demoUserSelectDiv {
+	margin-left:10px;
+	
+}
+
+.show-hide {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.show-hide.ng-hide {
+  opacity:0;
+}
+
+
+/* Switch start */
+.demoUsers-switch-container {
+  position:relative;
+  background:white;
+  overflow:hidden;
+}
+
+.demoUsers-switch {
+  padding:10px 0;
+}
+
+
+/* switch end */
+
+/* ng-animate start */
+
+.css-class-add, .css-class-remove {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 5s;
+}
+
+.css-class,
+.css-class-add.css-class-add-active {
+/*   color: darkblue; */
+  font-size:1.2em;
+  font-weigt:bold;
+  text-shadow: 1px 1px 1px #888; 
+  text-decoration: underline;
+}
+
+.css-class-remove.css-class-remove-active {
+  font-size:1.0em;
+  color:black;
+}
+
+/* ng-animate end */
+
+/* ============================ THE END ============================= */
